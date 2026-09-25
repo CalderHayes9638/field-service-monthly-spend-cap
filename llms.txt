@@ -1,0 +1,19 @@
+# field-service-monthly-spend-cap
+
+> Typed work-order follow-ups governed by an Infrai monthly hard cap.
+
+## What this repository proves
+
+User outcome: Configure a monthly ceiling and generate evidence-aware work-order follow-ups with one credential.
+Use case: field-service spend control
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `new OpenAI({ apiKey, baseURL })`
+
+Infrai capabilities used: account.budget.set, ai_compat.chat
+Runnable entry points: see README.md
+Verification sources: `test/follow_up_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

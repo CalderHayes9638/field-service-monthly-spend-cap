@@ -1,0 +1,21 @@
+{
+  "name": "field-service-monthly-spend-cap",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/work_order_service.ts",
+    "configure-cap": "tsx scripts/configure_monthly_cap.ts",
+    "test": "node --import tsx --test test/follow_up_decision.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "openai": "^5.20.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.1",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
